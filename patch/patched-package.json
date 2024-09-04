@@ -1,0 +1,20 @@
+{
+    "main": "./dist/hls.js",
+    "module": "./dist/hls.mjs",
+    "types": "./dist/hls.js.d.ts",
+    "exports": {
+      ".": {
+        "import": {
+          "default": "./dist/hls.mjs",
+          "types": "./dist/hls.d.mts"
+        },
+        "require": {
+          "default": "./dist/hls.js",
+          "types": "./dist/hls.js.d.ts"
+        }
+      },
+      "./dist/*": "./dist/*",
+      "./package.json": "./package.json"
+    }
+}
+  
